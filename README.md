@@ -1,2 +1,2 @@
-# Employee-leave-days-system-
-Employee Leave Management System is a web application designed to streamline the process of managing employee leave requests. The system enables employees to apply for leave, track their leave balances, and view leave history, while administrators and managers can approve, reject, and monitor leave requests through a centralized dashboard. 
+# Employee-Leave-Management-System-Frontend-Application-
+Developed a leave management system to handle employee requests and approvals Implemented workflow features including request submission, approval, and rejection Added filtering functionality based on leave status Used localStorage for persistent data management Designed a clean and user-friendly interface for business operations
