@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Employee Leave Management</h1>
+</header>
+
+<section class="form-section">
+    <input type="text" id="name" placeholder="Employee Name">
+    <input type="date" id="startDate">
+    <input type="date" id="endDate">
+    <select id="type">
+        <option value="Annual">Annual Leave</option>
+        <option value="Sick">Sick Leave</option>
+    </select>
+    <button onclick="addLeave()">Submit Request</button>
+</section>
+
+<section class="filter-section">
+    <select onchange="filterLeaves()" id="statusFilter">
+        <option value="all">All</option>
+        <option value="Pending">Pending</option>
+        <option value="Approved">Approved</option>
+        <option value="Rejected">Rejected</option>
+    </select>
+</section>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Leave Type</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="leaveTable"></tbody>
+</table>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
